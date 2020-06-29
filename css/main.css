@@ -1,0 +1,78 @@
+/* TREVOR DAVID BLACK
+ * trevord.black
+ * 2020-1-13
+*/
+
+body {
+    margin: 40px auto;
+    width: 900px;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+    font-family: arial;
+}
+a {
+    text-decoration: none;
+}
+p {
+    line-height: 1.4em;
+    margin: 0;
+}
+h1 {
+    font-size: 20px;
+    font-family: -apple-system, helvetica, arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+#wrap {
+    margin: 30px auto;
+    max-width: 900px;
+}
+#title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#title a,
+#links a {
+    color: rgba(0, 0, 0, 0.8);
+}
+#about {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+#about a {
+    color: rgba(0, 0, 0, 0.8);
+    text-decoration: underline;
+}
+#about a:hover {
+    text-decoration: none;
+}
+#links ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+}
+#links li {
+    font-family: -apple-system, helvetica, arial, sans-serif;
+    display: inline;
+    margin-right: 20px;
+    font-weight: bold;
+}
+#links li a:hover {
+    text-decoration: underline;
+}
+.mono {
+    font-family: courier;
+}
+img {
+    width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        width: 100%;
+    }
+    #text{
+        margin: 0 7px;
+    }
+}

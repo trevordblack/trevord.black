@@ -1,0 +1,116 @@
+/* TREVOR DAVID BLACK
+ * trevord.black
+ * Created: 2020-03-17
+ * Last Modified: 2020-03-17
+*/
+
+.nav {
+  margin: 40px auto;
+  width: 900px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-family: arial;
+}
+.nav a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#topnav {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#bottomnav {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#header {
+
+}
+
+#article {
+  margin: 40px auto;
+  width: 900px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-family: arial;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+#article #title h1 {
+  font-size: 32px;
+  font-family: -apple-system, helvetica, arial, sans-serif;
+  margin-bottom: 14px;
+  margin-left: 0px;
+}
+
+#article #subtitle h1 {
+  font-size: 14px;
+  font-family: -apple-system, helvetica, arial, sans-serif;
+  margin-bottom: 32px;
+  margin-left: 12px;  
+}
+
+#article .post .post-title  {
+  font-size: 24px;
+  font-family: -apple-system, helvetica, arial, sans-serif;
+  margin-bottom: 0px;
+  margin-left: 0px;
+}
+
+#article .post .post-date  {
+  font-size: 20px;
+  font-family: -apple-system, helvetica, arial, sans-serif;
+  color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 0px;
+  margin-left: 12px;
+}
+
+#article .post .post-subtitle {
+  font-size: 18px;
+  font-family: -apple-system, helvetica, arial, sans-serif;
+  margin-bottom: 32px;
+  margin-left: 0px;  
+}
+
+#article p {
+  line-height: 1.2em;
+  margin: 0;
+  margin-left: 0px;
+}
+
+#article img {
+  width: 100%;
+}
+#article a {
+  text-decoration: none;
+  color: rgba(0, 0, 128, 0.8);
+  font-weight: bold;
+}
+#article a:hover {
+  text-decoration: underline;
+}
+#article a:visited {
+  color: rgba(0, 0, 128, 0.6);
+}
+
+#footer {
+
+}
