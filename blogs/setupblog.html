@@ -40,420 +40,399 @@
 </head>
 
 <body>
+    <div id='wrap'>
+        <div id='text'>
 
-    <div class='nav'>
-        <div id='topnav'>
-            <ul>
-                <li>
-                    <a href='/'>Home</a>
-                </li>
-                <li>
-                    <a href='/blog'>Blog</a>
-                </li>
-                <li>
-                    <a href='/photography'>Photography</a>
-                </li>
-                <li>
-                    <a href='http://www.github.com/trevordblack' target='_blank'>Code</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-    <div id='header'>
-        
-        <! TODO Put Header of the article here >
 
-    </div>
+            <div class='nav'>
+                <ul>
+                    <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li>
+                        <a href='/blog'>Blog</a>
+                    </li>
+                    <li>
+                        <a href='/photography'>Photography</a>
+                    </li>
+                    <li>
+                        <a href='http://www.github.com/trevordblack' target='_blank'>Code</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id='header'>
 
-    <div id='article'>
-
-        <div id='title'>
-            <h1>
                 Setup Blog
-            </h1>
-        </div>
 
-        <div id='subtitle'>
-            <h1>
+            </div>
+
+            <div id='subheader'>
+
                 This is a blog post outlining the process of setting up a blog and hosting on my own website.
-            </h1>
-        </div>
 
-            <h1>Markdown</h1>
+            </div>
 
-            <p>It starts, naturally, with a markdown document:</p>
+            <div id='article'>
 
-            <pre><code class="language-markdown">Setup Blog
-===============================================================================
+                    <h1>Markdown</h1>
 
-This is a blog post outlining the process of setting up a blog and hosting on
-my own website.
+                    <p>It starts, naturally, with a markdown document:</p>
 
-Markdown
--------------------------------------------------------------------------------
+                    <pre><code class="language-markdown">Setup Blog
+        ===============================================================================
 
-It starts, naturally, with a markdown document:
+        This is a blog post outlining the process of setting up a blog and hosting on
+        my own website.
 
-You are looking at a Markdown document. </code></pre>
+        Markdown
+        -------------------------------------------------------------------------------
 
-            <p>Before any posting to the site takes place, it is imperative that this document
-            is at, or near, final draft.</p>
+        It starts, naturally, with a markdown document:
 
-            <p>There is quite a lot of manual editing to be done at the end, and it makes
-            little sense to be doing this repeatedly as modifications are made.</p>
+        You are looking at a Markdown document. </code></pre>
 
-            <p>Once the Markdown draft is completed, it is time to move on&hellip;</p>
+                    <p>Before any posting to the site takes place, it is imperative that this document
+                    is at, or near, final draft.</p>
 
-            <h2>Unix Markdown command</h2>
+                    <p>There is quite a lot of manual editing to be done at the end, and it makes
+                    little sense to be doing this repeatedly as modifications are made.</p>
 
-            <p>Markdown is&ndash;by design&ndash;a trivial markup language.</p>
+                    <p>Once the Markdown draft is completed, it is time to move on&hellip;</p>
 
-            <p>HTML is expressive but outlandishly complicated.</p>
+                    <h2>Unix Markdown command</h2>
 
-            <p>The markup language used for this website is HTML, so the Markdown draft will
-            need be converted into html somehow.</p>
+                    <p>Markdown is&ndash;by design&ndash;a trivial markup language.</p>
 
-            <p>Fortunately, Unix already provides a utility that accomplishes 80% of what I
-            need.</p>
+                    <p>HTML is expressive but outlandishly complicated.</p>
 
-            <p>The <a href="https://linux.die.net/man/1/markdown">markdown</a> utility is a command-line
-            tool that parses markdown and spits to standard-out an approximate html text</p>
+                    <p>The markup language used for this website is HTML, so the Markdown draft will
+                    need be converted into html somehow.</p>
 
-            <p>The above markdown example converts as following
+                    <p>Fortunately, Unix already provides a utility that accomplishes 80% of what I
+                    need.</p>
 
-            <pre><code class="language-bash">trevord.black$ markdown example.md
+                    <p>The <a href="https://linux.die.net/man/1/markdown">markdown</a> utility is a command-line
+                    tool that parses markdown and spits to standard-out an approximate html text</p>
 
-<h1>Setup Blog</h1>
+                    <p>The above markdown example converts as following
 
-<p>This is a blog post outlining the process of setting up a blog and hosting on
-my own website.</p>
+                    <pre><code class="language-bash">trevord.black$ markdown example.md
 
-<h2>Markdown</h2>
+        <h1>Setup Blog</h1>
 
-<p>It starts, naturally, with a markdown document:</p>
+        <p>This is a blog post outlining the process of setting up a blog and hosting on
+        my own website.</p>
 
-<p>You are looking at a Markdown document.</p> </pre></code>
+        <h2>Markdown</h2>
 
-            <p>To produce a file, simply pipe the output to a file:
+        <p>It starts, naturally, with a markdown document:</p>
 
-            <pre><code class="language-bash">trevord.black$ markdown example.md &gt; example.html </code></pre>
+        <p>You are looking at a Markdown document.</p> </pre></code>
 
-            <h1>Skeleton HTML</h1>
+                    <p>To produce a file, simply pipe the output to a file:
 
-            <p>The above html example is too simple to be correctly interpreted by a browser.</p>
+                    <pre><code class="language-bash">trevord.black$ markdown example.md &gt; example.html </code></pre>
 
-            <p>We want fancy stuff like font sizings and colors and emphasis. We also want
-            support for math rendering and code rendering. So we need to fill all of that
-            out.</p>
+                    <h1>Skeleton HTML</h1>
 
-            <p>All blogs on this website will follow a set pattern. I have a decent idea of
-            what I want that pattern to look like, so I just created a skeleton html file
-            that contained the superset of any functionality I perceive that I&rsquo;ll ever want
-            to add.</p>
+                    <p>The above html example is too simple to be correctly interpreted by a browser.</p>
 
-            <p>It&rsquo;s a fool&rsquo;s errand to try and build out every functionality I could ever
-            conceivably want, but, I find the following adequate for the time being</p>
+                    <p>We want fancy stuff like font sizings and colors and emphasis. We also want
+                    support for math rendering and code rendering. So we need to fill all of that
+                    out.</p>
 
-            <pre><code class="language-html">&lt;!DOCTYPE html&gt;
-&lt;html&gt;
+                    <p>All blogs on this website will follow a set pattern. I have a decent idea of
+                    what I want that pattern to look like, so I just created a skeleton html file
+                    that contained the superset of any functionality I perceive that I&rsquo;ll ever want
+                    to add.</p>
 
-&lt;head&gt;
-    &lt;title&gt;
+                    <p>It&rsquo;s a fool&rsquo;s errand to try and build out every functionality I could ever
+                    conceivably want, but, I find the following adequate for the time being</p>
 
-        &lt;! TODO Put Title of blog here &gt;
+                    <pre><code class="language-html">&lt;!DOCTYPE html&gt;
+        &lt;html&gt;
 
-    &lt;/title&gt;
-    &lt;meta charset='UTF-8'&gt;
-    &lt;meta content='width=device-width, initial-scale=1' name='viewport'/&gt;
+        &lt;head&gt;
+            &lt;title&gt;
 
-    &lt;meta name='description' content='Trevor David Black is a visual person.'&gt;
-    &lt;meta name='keywords' content='computer science, computer graphics, graphics, rendering, programming, movies, video games, mathematics, linear algebra, photography, cinematography'&gt;
-    &lt;meta name='author' content='Trevor David Black'&gt;
+                &lt;! TODO Put Title of blog here &gt;
 
-    &lt;link rel='stylesheet' type='text/css' href='/css/blogs.css'/&gt;
-    &lt;link rel='shortcut icon' href='/favicon.png?v=e' /&gt;
+            &lt;/title&gt;
+            &lt;meta charset='UTF-8'&gt;
+            &lt;meta content='width=device-width, initial-scale=1' name='viewport'/&gt;
 
-    &lt;! MathJax setup &gt;
-    &lt;script&gt;
-        MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']]
-            },
-            chtml: {
-                scale: 1.4
-            }
-        }    
-    &lt;/script&gt;
-    &lt;script src="https://polyfill.io/v3/polyfill.min.js?features=es6"&gt;&lt;/script&gt;
-    &lt;script id="MathJax-script" async
-          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"&gt;
-    &lt;/script&gt;
+            &lt;meta name='description' content='Trevor David Black is a visual person.'&gt;
+            &lt;meta name='keywords' content='computer science, computer graphics, graphics, rendering, programming, movies, video games, mathematics, linear algebra, photography, cinematography'&gt;
+            &lt;meta name='author' content='Trevor David Black'&gt;
 
-    &lt;! PrismJS (Code highlighting) setup &gt;
-    &lt;link href="/css/prism.css" rel="stylesheet" type="text/css" /&gt;
-    &lt;script src="/script/prism.js" type="text/javascript"&gt;&lt;/script&gt;
+            &lt;link rel='stylesheet' type='text/css' href='/css/blogs.css'/&gt;
+            &lt;link rel='shortcut icon' href='/favicon.png?v=e' /&gt;
 
-&lt;/head&gt;
+            &lt;! MathJax setup &gt;
+            &lt;script&gt;
+                MathJax = {
+                    tex: {
+                        inlineMath: [['$', '$'], ['\\(', '\\)']]
+                    },
+                    chtml: {
+                        scale: 1.4
+                    }
+                }    
+            &lt;/script&gt;
+            &lt;script src="https://polyfill.io/v3/polyfill.min.js?features=es6"&gt;&lt;/script&gt;
+            &lt;script id="MathJax-script" async
+                  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"&gt;
+            &lt;/script&gt;
 
-&lt;body&gt;
+            &lt;! PrismJS (Code highlighting) setup &gt;
+            &lt;link href="/css/prism.css" rel="stylesheet" type="text/css" /&gt;
+            &lt;script src="/script/prism.js" type="text/javascript"&gt;&lt;/script&gt;
 
-    &lt;div class='nav'&gt;
-        &lt;div id='topnav'&gt;
-            &lt;ul&gt;
-                &lt;li&gt;
-                    &lt;a href='/'&gt;Home&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href='/blog'&gt;Blog&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href='/photography'&gt;Photography&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href='http://www.github.com/trevordblack' target='_blank'&gt;Code&lt;/a&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
+        &lt;/head&gt;
+
+        &lt;body&gt;
+
+            &lt;div class='nav'&gt;
+                &lt;div id='topnav'&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;a href='/'&gt;Home&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href='/blog'&gt;Blog&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href='/photography'&gt;Photography&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href='http://www.github.com/trevordblack' target='_blank'&gt;Code&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+            &lt;div id='header'&gt;
+
+                &lt;! TODO Put Header of the article here &gt;
+
+            &lt;/div&gt;
+
+            &lt;div id='article'&gt;
+
+                &lt;div id='title'&gt;
+                    &lt;h1&gt;
+                        &lt;! TODO Put Title of the article here &gt;
+                    &lt;/h1&gt;
+                &lt;/div&gt;
+
+                &lt;div id='subtitle'&gt;
+                    &lt;h1&gt;
+                        &lt;! TODO Put Subtitle of the article here &gt;
+                    &lt;/h1&gt;
+                &lt;/div&gt;
+
+                &lt;! TODO Put Markdown output here &gt;
+
+            &lt;/div&gt;
+
+            &lt;div id='footer'&gt;
+
+                &lt;! TODO Put footer of the article here &gt;
+
+            &lt;/div&gt;
+
+            &lt;div class='nav'&gt;
+                &lt;div id='bottomnav'&gt;
+                    &lt;ul&gt;
+                        &lt;li&gt;
+                            &lt;a href='/'&gt;Home&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href='/blog'&gt;Blog&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href='/photography'&gt;Photography&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li&gt;
+                            &lt;a href='http://www.github.com/trevordblack' target='_blank'&gt;Code&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+
+        &lt;/body&gt;
+
+        &lt;/html&gt; </pre></code>
+
+                    <p>Sorry for the wall of text.</p>
+
+                    <p>
+                    Looking through, you an see some basic functionality.
+                    <ul>
+                        <li> Title </li>
+                        <li> Navigation bar at the top </li>
+                        <li> Navigation bar at the bottom </li>
+                        <li> Support for headers </li>
+                        <li> Support for footers </li>
+                        <li> Title of the article (same as Title) </li>
+                        <li> Subtitle of the article </li>
+                        <li> Article </li>
+                    </ul>
+                    </p>
+
+                    <h2>Modifications to the Skeleton HTML</h2>
+
+                    <p>The output of the markdown command line needs go in the article section:</p>
+
+                    <pre><code class="language-html">&hellip;
+
+        &lt;div id='article'&gt;
+
+            &lt;div id='title'&gt;
+                &lt;h1&gt;
+                    &lt;! TODO Put Title of the article here &gt;
+                &lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;div id='subtitle'&gt;
+                &lt;h1&gt;
+                    &lt;! TODO Put Subtitle of the article here &gt;
+                &lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;! TODO Put Markdown output here &gt;
+
         &lt;/div&gt;
-    &lt;/div&gt;
 
-    &lt;div id='header'&gt;
+        &hellip; </code></pre>
 
-        &lt;! TODO Put Header of the article here &gt;
+                    <p>Becomes:</p>
 
-    &lt;/div&gt;
+                    <pre><code class="language-html">&hellip;
 
-    &lt;div id='article'&gt;
+        &lt;div id='article'&gt;
 
-        &lt;div id='title'&gt;
-            &lt;h1&gt;
-                &lt;! TODO Put Title of the article here &gt;
-            &lt;/h1&gt;
+            &lt;div id='title'&gt;
+                &lt;h1&gt;
+                    &lt;! TODO Put Title of the article here &gt;
+                &lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;div id='subtitle'&gt;
+                &lt;h1&gt;
+                    &lt;! TODO Put Subtitle of the article here &gt;
+                &lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;h1&gt;Setup Blog&lt;/h1&gt;
+
+            &lt;p&gt;This is a blog post outlining the process of setting up a blog and hosting on
+            my own website.&lt;/p&gt;
+
+            &lt;h2&gt;Markdown&lt;/h2&gt;
+
+            &lt;p&gt;It starts, naturally, with a markdown document:&lt;/p&gt;
+
+            &lt;p&gt;You are looking at a Markdown document.&lt;/p&gt;
+
         &lt;/div&gt;
 
-        &lt;div id='subtitle'&gt;
-            &lt;h1&gt;
-                &lt;! TODO Put Subtitle of the article here &gt;
-            &lt;/h1&gt;
+        &hellip; </pre></code>
+
+                    <p>But, we&rsquo;ve included the title and subtitle in the content section, so those
+                    need to be rearranged</p>
+
+                    <pre><code class="language-html">&hellip;
+
+        &lt;div id='article'&gt;
+
+            &lt;div id='title'&gt;
+                &lt;h1&gt;
+                    Setup Blog
+                &lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;div id='subtitle'&gt;
+                &lt;h1&gt;
+                    This is a blog post outlining the process of setting up a blog and hosting on my own website.
+                &lt;/h1&gt;
+            &lt;/div&gt;
+
+            &lt;h2&gt;Markdown&lt;/h2&gt;
+
+            &lt;p&gt;It starts, naturally, with a markdown document:&lt;/p&gt;
+
+            &lt;p&gt;You are looking at a Markdown document.&lt;/p&gt;
+
         &lt;/div&gt;
 
-        &lt;! TODO Put Markdown output here &gt;
+        &hellip; </pre></code>
 
-    &lt;/div&gt;
+                    <p>We also need to change the title for our html document in the head:</p>
 
-    &lt;div id='footer'&gt;
+                    <pre><code class="language-html">&lt;!DOCTYPE html>
+        &lt;html&gt;
 
-        &lt;! TODO Put footer of the article here &gt;
+        &lt;head&gt;
+            &lt;title&gt;
 
-    &lt;/div&gt;
+                Setup Blog
 
-    &lt;div class='nav'&gt;
-        &lt;div id='bottomnav'&gt;
-            &lt;ul&gt;
-                &lt;li&gt;
-                    &lt;a href='/'&gt;Home&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href='/blog'&gt;Blog&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href='/photography'&gt;Photography&lt;/a&gt;
-                &lt;/li&gt;
-                &lt;li&gt;
-                    &lt;a href='http://www.github.com/trevordblack' target='_blank'&gt;Code&lt;/a&gt;
-                &lt;/li&gt;
-            &lt;/ul&gt;
-        &lt;/div&gt;
-    &lt;/div&gt;
+            &lt;/title&gt;
 
-&lt;/body&gt;
+        &hellip; </pre></code>
 
-&lt;/html&gt; </pre></code>
+                    <p>If there are any math sections, they may need to be changed:</p>
 
-            <p>Sorry for the wall of text.</p>
+                    <pre><code class="language-markdown">$$ Math $$  -> $$ Math $$ (unchanged)
 
-            <p>
-            Looking through, you an see some basic functionality.
-            <ul>
-                <li> Title </li>
-                <li> Navigation bar at the top </li>
-                <li> Navigation bar at the bottom </li>
-                <li> Support for headers </li>
-                <li> Support for footers </li>
-                <li> Title of the article (same as Title) </li>
-                <li> Subtitle of the article </li>
-                <li> Article </li>
-            </ul>
-            </p>
+        Inline $ Math $ like this -> Inline ( Math ) like this</pre></code>
 
-            <h2>Modifications to the Skeleton HTML</h2>
+                    <p>If there are any code sections they will need to be changed:</p>
 
-            <p>The output of the markdown command line needs go in the article section:</p>
+                    <pre><code class="language-markdown">```c++
+        #include &lt;iostream&gt;
+        int main() {
+          std::cout &lt;&lt; &ldquo;Hello World.&rdquo; &lt;&lt; std::endl;
+          return 0;
+        }```
 
-            <pre><code class="language-html">&hellip;
+        &lt;pre&gt;&lt;code class="language-cpp"&gt;#include &lt;iostream&gt;
 
-&lt;div id='article'&gt;
+        int main() {
+          std::cout &lt;&lt; &ldquo;Hello World.&rdquo; &lt;&lt; std::endl;
+          return 0;
+        }
+        &lt;/code&gt;&lt;/pre&gt; </pre></code>
 
-    &lt;div id='title'&gt;
-        &lt;h1&gt;
-            &lt;! TODO Put Title of the article here &gt;
-        &lt;/h1&gt;
-    &lt;/div&gt;
+                    <h1>Export</h1>
 
-    &lt;div id='subtitle'&gt;
-        &lt;h1&gt;
-            &lt;! TODO Put Subtitle of the article here &gt;
-        &lt;/h1&gt;
-    &lt;/div&gt;
+                    <p>Add the newest blog to the list of blogs at <a href="/blog">Blog</a></p>
 
-    &lt;! TODO Put Markdown output here &gt;
+                    <pre><code class="language-html">&lt;div class='post'&gt;
+            &lt;p class='post-title'&gt;&lt;a href="/blogs/setupblog.html"&gt; Setup Blog &lt;/a&gt;&lt;/span&gt;
+            &lt;p class='post-date'&gt; 17 March 2020 &lt;/span&gt;
+            &lt;p class='post-subtitle'&gt; A self documenting blog that explains how Trevor posts blogs to this website.
+        &lt;/div&gt; </pre></code>
 
-&lt;/div&gt;
+                    <p>Once the blog has been written, converted, and finalized, the last thing to do
+                    is export:</p>
 
-&hellip; </code></pre>
+                    <pre><code class="language-bash">trevord.black$ scp -r * &lt;user&gt;@trevord.black:&lt;folder&gt;</pre></code>
 
-            <p>Becomes:</p>
+                    <p>And that&rsquo;s it.</p>
 
-            <pre><code class="language-html">&hellip;
+                    <p>Just refresh the page.</p>
 
-&lt;div id='article'&gt;
+            </div>
 
-    &lt;div id='title'&gt;
-        &lt;h1&gt;
-            &lt;! TODO Put Title of the article here &gt;
-        &lt;/h1&gt;
-    &lt;/div&gt;
+            <div id='footer'>
+                
+                <! TODO Put footer of the article here >
 
-    &lt;div id='subtitle'&gt;
-        &lt;h1&gt;
-            &lt;! TODO Put Subtitle of the article here &gt;
-        &lt;/h1&gt;
-    &lt;/div&gt;
+            </div>
 
-    &lt;h1&gt;Setup Blog&lt;/h1&gt;
-
-    &lt;p&gt;This is a blog post outlining the process of setting up a blog and hosting on
-    my own website.&lt;/p&gt;
-
-    &lt;h2&gt;Markdown&lt;/h2&gt;
-
-    &lt;p&gt;It starts, naturally, with a markdown document:&lt;/p&gt;
-
-    &lt;p&gt;You are looking at a Markdown document.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&hellip; </pre></code>
-
-            <p>But, we&rsquo;ve included the title and subtitle in the content section, so those
-            need to be rearranged</p>
-
-            <pre><code class="language-html">&hellip;
-
-&lt;div id='article'&gt;
-
-    &lt;div id='title'&gt;
-        &lt;h1&gt;
-            Setup Blog
-        &lt;/h1&gt;
-    &lt;/div&gt;
-
-    &lt;div id='subtitle'&gt;
-        &lt;h1&gt;
-            This is a blog post outlining the process of setting up a blog and hosting on my own website.
-        &lt;/h1&gt;
-    &lt;/div&gt;
-
-    &lt;h2&gt;Markdown&lt;/h2&gt;
-
-    &lt;p&gt;It starts, naturally, with a markdown document:&lt;/p&gt;
-
-    &lt;p&gt;You are looking at a Markdown document.&lt;/p&gt;
-
-&lt;/div&gt;
-
-&hellip; </pre></code>
-
-            <p>We also need to change the title for our html document in the head:</p>
-
-            <pre><code class="language-html">&lt;!DOCTYPE html>
-&lt;html&gt;
-
-&lt;head&gt;
-    &lt;title&gt;
-
-        Setup Blog
-
-    &lt;/title&gt;
-
-&hellip; </pre></code>
-
-            <p>If there are any math sections, they may need to be changed:</p>
-
-            <pre><code class="language-markdown">$$ Math $$  -> $$ Math $$ (unchanged)
-
-Inline $ Math $ like this -> Inline ( Math ) like this</pre></code>
-
-            <p>If there are any code sections they will need to be changed:</p>
-
-            <pre><code class="language-markdown">```c++
-#include &lt;iostream&gt;
-int main() {
-  std::cout &lt;&lt; &ldquo;Hello World.&rdquo; &lt;&lt; std::endl;
-  return 0;
-}```
-
-&lt;pre&gt;&lt;code class="language-cpp"&gt;#include &lt;iostream&gt;
-
-int main() {
-  std::cout &lt;&lt; &ldquo;Hello World.&rdquo; &lt;&lt; std::endl;
-  return 0;
-}
-&lt;/code&gt;&lt;/pre&gt; </pre></code>
-
-            <h1>Export</h1>
-
-            <p>Add the newest blog to the list of blogs at <a href="/blog">Blog</a></p>
-
-            <pre><code class="language-html">&lt;div class='post'&gt;
-    &lt;p class='post-title'&gt;&lt;a href="/blogs/setupblog.html"&gt; Setup Blog &lt;/a&gt;&lt;/span&gt;
-    &lt;p class='post-date'&gt; 17 March 2020 &lt;/span&gt;
-    &lt;p class='post-subtitle'&gt; A self documenting blog that explains how Trevor posts blogs to this website.
-&lt;/div&gt; </pre></code>
-
-            <p>Once the blog has been written, converted, and finalized, the last thing to do
-            is export:</p>
-
-            <pre><code class="language-bash">trevord.black$ scp -r * &lt;user&gt;@trevord.black:&lt;folder&gt;</pre></code>
-
-            <p>And that&rsquo;s it.</p>
-
-            <p>Just refresh the page.</p>
-
-    </div>
-
-    <div id='footer'>
-        
-        <! TODO Put footer of the article here >
-
-    </div>
-
-    <div class='nav'>
-        <div id='bottomnav'>
-            <ul>
-                <li>
-                    <a href='/'>Home</a>
-                </li>
-                <li>
-                    <a href='/blog'>Blog</a>
-                </li>
-                <li>
-                    <a href='/photography'>Photography</a>
-                </li>
-                <li>
-                    <a href='http://www.github.com/trevordblack' target='_blank'>Code</a>
-                </li>
-            </ul>
         </div>
     </div>
 
