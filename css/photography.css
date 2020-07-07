@@ -1,13 +1,14 @@
 /* TREVOR DAVID BLACK
  * trevord.black
- * Created: 2020-03-17
- * Last Modified: 2020-03-17
+ * Created: 2020-07-07
+ * Last Modified: 2020-07-07
 */
 
 body {
   margin: 0px auto;
   width: 1080px;
-  color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   font-family: arial;
 }
@@ -24,10 +25,10 @@ body {
   color: rgba(0, 0, 0, 0.8);
   font-size: 14px;
   font-family: arial;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
 }
 .nav a {
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
   border-bottom: none;
   font-size: 14px;
@@ -55,32 +56,10 @@ body {
 #article {
   margin: 40px auto;
   width: 100%;
-  color: rgba(0, 0, 0, 0.8);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   font-family: arial;
   margin: 30px auto;
-}
-
-#article .post .post-title  {
-  font-size: 24px;
-  font-family: -apple-system, helvetica, arial, sans-serif;
-  margin-bottom: 0px;
-  margin-left: 0px;
-}
-
-#article .post .post-date  {
-  font-size: 20px;
-  font-family: -apple-system, helvetica, arial, sans-serif;
-  color: rgba(0, 0, 0, 0.5);
-  margin-bottom: 0px;
-  margin-left: 12px;
-}
-
-#article .post .post-subtitle {
-  font-size: 18px;
-  font-family: -apple-system, helvetica, arial, sans-serif;
-  margin-bottom: 32px;
-  margin-left: 0px;  
 }
 
 #article p {
@@ -94,14 +73,14 @@ body {
 }
 #article a {
   text-decoration: none;
-  color: rgba(0, 0, 128, 0.8);
+  color: rgba(128, 128, 255, 0.9);
   font-weight: bold;
 }
 #article a:hover {
   text-decoration: underline;
 }
 #article a:visited {
-  color: rgba(0, 0, 128, 0.6);
+  color: rgba(128, 128, 255, 0.9);
 }
 
 #footer {

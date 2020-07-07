@@ -40,55 +40,50 @@
 </head>
 
 <body>
+    <div id='wrap'>
+        <div id='text'>
 
-    <div class='nav'>
-        <div id='topnav'>
-            <ul>
-                <li>
-                    <a href='/'>Home</a>
-                </li>
-                <li>
-                    <a href='/blog'>Blog</a>
-                </li>
-                <li>
-                    <a href='/photography'>Photography</a>
-                </li>
-                <li>
-                    <a href='http://www.github.com/trevordblack' target='_blank'>Code</a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    
-    <div id='header'>
-        
-        <! TODO Put Header of the article here >
-
-    </div>
-
-    <div id='article'>
-
-        <div id='title'>
-            <h1>
+            <div class='nav'>
+                <ul>
+                    <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li>
+                        <a href='/blog'>Blog</a>
+                    </li>
+                    <li>
+                        <a href='/photography'>Photography</a>
+                    </li>
+                    <li>
+                        <a href='http://www.github.com/trevordblack' target='_blank'>Code</a>
+                    </li>
+                </ul>
+            </div>
+            
+            <div id='header'>
+                
                 Blog
-            </h1>
+
+            </div>
+
+            <div id='article'>
+
+                <ul>
+                    <div class='post'>
+                        <p class='post-title'><a href="/blogs/setupblog.html"> Setup Blog </a></span></p>
+                        <p class='post-date'> 17 March 2020 </span></p>
+                        <p class='post-subtitle'> A self documenting blog that explains how Trevor posts blogs to this website. </p>
+                    </div>
+
+                    <div class='post'>
+                        <p class='post-title'><a href="/blogs/toyblog.html"> Toy Blog </a></span></p>
+                        <p class='post-date'> 03 March 2020 </span></p>
+                        <p class='post-subtitle'> Experimenting with website framework. </p>
+                    </div>
+
+                </ul>
+            </div>
         </div>
-
-        <ul>
-            <div class='post'>
-                <p class='post-title'><a href="/blogs/setupblog.html"> Setup Blog </a></span>
-                <p class='post-date'> 17 March 2020 </span>
-                <p class='post-subtitle'> A self documenting blog that explains how Trevor posts blogs to this website. </p>
-            </div>
-
-            <div class='post'>
-                <p class='post-title'><a href="/blogs/toyblog.html"> Toy Blog </a></span>
-                <p class='post-date'> 03 March 2020 </span>
-                <p class='post-subtitle'> Experimenting with website framework. </p>
-            </div>
-
-        </ul>
-
     </div>
 
 </body>

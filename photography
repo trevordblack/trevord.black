@@ -14,14 +14,16 @@
     <meta name='keywords' content='computer science, computer graphics, graphics, rendering, programming, movies, video games, mathematics, linear algebra, photography, cinematography'>
     <meta name='author' content='Trevor David Black'>
 
-    <link rel='stylesheet' type='text/css' href='/css/blogs.css'/>
+    <link rel='stylesheet' type='text/css' href='/css/photography.css'/>
     <link rel='shortcut icon' href='/favicon.png?v=e' />
 </head>
 
 <body>
+    <div id='wrap'>
+        <div id='text'>
 
-    <div class='nav'>
-        <div id='topnav'>
+
+        <div class='nav'>
             <ul>
                 <li>
                     <a href='/'>Home</a>
@@ -37,42 +39,43 @@
                 </li>
             </ul>
         </div>
-    </div>
 
 
-    <div id='article'>
+        <div id='article'>
 
-        <div id='title'>
-            <h1>
-                Photography
-            </h1>
+            <div id='title'>
+                <h1>
+                    Photography
+                </h1>
+            </div>
+
+
+            <h4>
+                © 2020 Trevor David Black
+                <br>
+                All Rights Reserved
+            </h4>
+
+            <h3>
+                Dusk
+            </h3>
+            <a href="image/Dusk.jpg">
+                <img src="image/photography/2020/Dusk.jpg" >
+            </a> 
+
+            <b></b>
+
+            <h3>
+                Japan #1
+            </h3>
+            <a href="image/Japan_No1.jpg">
+                <img src="image/photography/2020/Japan_No1.jpg" >
+            </a> 
+
+
         </div>
-
-
-        <h3>
-            © 2020 Trevor David Black
-            <br>
-            All Rights Reserved
-        </h3>
-
-        <h2>
-            Dusk
-        </h2>
-        <a href="image/Dusk.jpg">
-            <img src="image/Dusk.jpg" >
-        </a> 
-
-        <b></b>
-
-        <h2>
-            Japan #1
-        </h2>
-        <a href="image/Japan_No1.jpg">
-            <img src="image/Japan_No1.jpg" >
-        </a> 
-
-
     </div>
+</div>
 
 </body>
 

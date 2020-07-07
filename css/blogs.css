@@ -4,9 +4,14 @@
  * Last Modified: 2020-03-08
 */
 
+body {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  font-size: 62.5%;
+}
+
 .nav {
   margin: 40px auto;
-  width: 900px;
+  width: 1080px;
   margin-top: 15px;
   margin-bottom: 15px;
   color: rgba(0, 0, 0, 0.8);
@@ -33,11 +38,11 @@
 }
 
 #topnav {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #bottomnav {
-    border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 #header {
@@ -46,12 +51,12 @@
 
 #article {
   margin: 40px auto;
-  width: 900px;
+  width: 1080px;
   color: rgba(0, 0, 0, 0.8);
   font-size: 14px;
   font-family: arial;
   margin: 30px auto;
-  max-width: 900px;
+  max-width: 1080px;
 }
 
 #article #title h1 {

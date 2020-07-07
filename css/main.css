@@ -1,78 +1,85 @@
 /* TREVOR DAVID BLACK
  * trevord.black
- * 2020-1-13
+ * Created: 2020-01-13
+ * Last Modified: 2020-07-07
 */
 
 body {
-    margin: 40px auto;
-    width: 900px;
-    color: rgba(0, 0, 0, 0.8);
-    font-size: 14px;
-    font-family: arial;
-}
-a {
-    text-decoration: none;
-}
-p {
-    line-height: 1.4em;
-    margin: 0;
-}
-h1 {
-    font-size: 20px;
-    font-family: -apple-system, helvetica, arial, sans-serif;
-    margin-bottom: 20px;
+  margin: 0px auto;
+  width: 1080px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-family: arial;
 }
 
 #wrap {
-    margin: 30px auto;
-    max-width: 900px;
-}
-#title {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-#title a,
-#links a {
-    color: rgba(0, 0, 0, 0.8);
-}
-#about {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
-#about a {
-    color: rgba(0, 0, 0, 0.8);
-    text-decoration: underline;
-}
-#about a:hover {
-    text-decoration: none;
-}
-#links ul {
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
-}
-#links li {
-    font-family: -apple-system, helvetica, arial, sans-serif;
-    display: inline;
-    margin-right: 20px;
-    font-weight: bold;
-}
-#links li a:hover {
-    text-decoration: underline;
-}
-.mono {
-    font-family: courier;
-}
-img {
-    width: 100%;
+  margin: 20px auto;
+  max-width: 1080px;
 }
 
-@media screen and (max-width: 900px) {
-    body {
-        width: 100%;
-    }
-    #text{
-        margin: 0 7px;
-    }
+.nav {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 45px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-family: arial;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.nav a {
+  color: rgba(0, 0, 0, 0.8);
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#header {
+  font-size: 20px;
+  font-family: -apple-system, helvetica, arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 1.4em;
+  margin: 20px 0px;
+}
+h1 {
+  font-size: 20px;
+  font-family: -apple-system, helvetica, arial, sans-serif;
+  margin-bottom: 20px;
+}
+
+.mono {
+  font-family: courier;
+}
+
+img {
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1080px) {
+  body {
+    width: 100%;
+  }
+  #text{
+    margin: 0 7px;
+  }
 }
