@@ -4,7 +4,7 @@
 <head>
     <title>
 
-        Photography
+        Photography - Dusk
 
     </title>
     <meta charset='UTF-8'>
@@ -45,7 +45,7 @@
 
             <div id='title'>
                 <h1>
-                    Photography
+                    Dusk
                 </h1>
             </div>
 
@@ -63,17 +63,9 @@
                 <img src="/image/photographs/2020/Dusk.jpg" >
             </a> 
 
-            <b></b>
-
-            <h3>
-                Japan #1
-            </h3>
-            <a href="/image/photographs/2020/Japan_No1.jpg">
-                <img src="/image/photographs/2020/Japan_No1.jpg" >
-            </a> 
-
             <div id='pagenav'>
-                <a class="fr" href='/photographs/Dusk'>Next</a>
+                <a class="fl" href='/photography'>Previous</a>
+                <a class="fr" href='/photographs/Japan_No1'>Next</a>
             </div>
 
         </div>
