@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+
+        Photography - Crystals
+
+    </title>
+    <meta charset='UTF-8'>
+    <meta content='width=device-width, initial-scale=1' name='viewport'/>
+    
+    <meta name='description' content='Trevor David Black is a visual person.'>
+    <meta name='keywords' content='computer science, computer graphics, graphics, rendering, programming, movies, video games, mathematics, linear algebra, photography, cinematography'>
+    <meta name='author' content='Trevor David Black'>
+
+    <link rel='stylesheet' type='text/css' href='/css/photographs.css'/>
+    <link rel='shortcut icon' href='/favicon.png?v=e' />
+</head>
+
+<body>
+    <div id='wrap'>
+        <div id='text'>
+
+
+        <div class='nav'>
+            <ul>
+                <li>
+                    <a href='/'>Home</a>
+                </li>
+                <li>
+                    <a href='/blog'>Blog</a>
+                </li>
+                <li>
+                    <a href='/photography'>Photography</a>
+                </li>
+                <li>
+                    <a href='http://www.github.com/trevordblack' target='_blank'>Code</a>
+                </li>
+            </ul>
+        </div>
+
+
+        <div id='article'>
+
+            <div id='title'>
+                <h1>
+                    Crystals
+                </h1>
+            </div>
+
+
+            <h4>
+                © 2019 Trevor David Black
+                <br>
+                All Rights Reserved
+            </h4>
+
+            <div id='window'>
+                <a href="/image/photographs/2019/Crystals.jpg">
+                    <img src="/image/photographs/2019/Crystals.jpg" >
+                </a> 
+            </div>
+
+            <div id='pagenav'>
+                <a class="fl" href='/photographs/SciFi'>Previous</a>
+                <a class="fr" href='/photographs/CloudsOverBlackMountain'>Next</a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+</body>
+
+</html>

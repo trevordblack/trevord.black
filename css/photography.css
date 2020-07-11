@@ -46,13 +46,6 @@ body {
   margin-right: 20px;
 }
 
-#header {
-  font-size: 20px;
-  font-family: -apple-system, helvetica, arial, sans-serif;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
 #article {
   margin: 40px auto;
   width: 100%;
@@ -68,46 +61,15 @@ body {
   margin-left: 0px;
 }
 
-#article img {
-  width: 100%;
-}
 #article a {
+  color: rgba(255, 255, 255, 0.9);
   text-decoration: none;
-  color: rgba(128, 128, 255, 0.9);
+  margin: 10px;
+  font-size: 14px;
   font-weight: bold;
 }
 #article a:hover {
   text-decoration: underline;
-}
-#article a:visited {
-  color: rgba(128, 128, 255, 0.9);
-}
-
-#article #footer {
-
-}
-
-#article #pagenav {
-    margin-top: 20px;
-}
-
-#article #pagenav a {
-  text-decoration: none;
-  font-size: 16px;    
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: bold;
-}
-
-#article #pagenav a:hover {
-    text-decoration: underline;
-}
-
-#article #pagenav .fl {
-    float: left;
-}
-
-#article #pagenav .fr {
-    float: right;
 }
 
 a {
@@ -121,10 +83,6 @@ h1 {
   font-size: 20px;
   font-family: -apple-system, helvetica, arial, sans-serif;
   margin-bottom: 20px;
-}
-
-.mono {
-  font-family: courier;
 }
 
 img {

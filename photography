@@ -49,32 +49,28 @@
                 </h1>
             </div>
 
+            <br>
 
-            <h4>
-                © 2020 Trevor David Black
-                <br>
-                All Rights Reserved
-            </h4>
+            <h2>
+                2020
+            </h2>
 
-            <h3>
-                Dusk
-            </h3>
-            <a href="/image/photographs/2020/Dusk.jpg">
-                <img src="/image/photographs/2020/Dusk.jpg" >
-            </a> 
+            <a href='/photographs/NinjaStarBokeh'>Ninja Star Bokeh</a>
+            <br>
+            <a href='/photographs/Dusk'>Dusk</a>
+            <br>
+            <a href='/photographs/Japan_No1'>Japan #1</a>
 
-            <b></b>
+            <h2>
+                2019
+            </h2>
 
-            <h3>
-                Japan #1
-            </h3>
-            <a href="/image/photographs/2020/Japan_No1.jpg">
-                <img src="/image/photographs/2020/Japan_No1.jpg" >
-            </a> 
+            <a href='/photographs/SciFi'>Science Fiction</a>
+            <br>
+            <a href='/photographs/Crystals'>Crystals</a>
+            <br>
+            <a href='/photographs/CloudsOverBlackMountain'>Clouds over Black Mountain</a>
 
-            <div id='pagenav'>
-                <a class="fr" href='/photographs/Dusk'>Next</a>
-            </div>
 
         </div>
     </div>

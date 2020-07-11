@@ -14,7 +14,7 @@
     <meta name='keywords' content='computer science, computer graphics, graphics, rendering, programming, movies, video games, mathematics, linear algebra, photography, cinematography'>
     <meta name='author' content='Trevor David Black'>
 
-    <link rel='stylesheet' type='text/css' href='/css/photography.css'/>
+    <link rel='stylesheet' type='text/css' href='/css/photographs.css'/>
     <link rel='shortcut icon' href='/favicon.png?v=e' />
 </head>
 
@@ -56,15 +56,14 @@
                 All Rights Reserved
             </h4>
 
-            <h3>
-                Dusk
-            </h3>
-            <a href="/image/photographs/2020/Dusk.jpg">
-                <img src="/image/photographs/2020/Dusk.jpg" >
-            </a> 
+            <div id='window'>
+                <a href="/image/photographs/2020/Dusk.jpg">
+                    <img src="/image/photographs/2020/Dusk.jpg" >
+                </a> 
+            </div>
 
             <div id='pagenav'>
-                <a class="fl" href='/photography'>Previous</a>
+                <a class="fl" href='/photographs/NinjaStarBokeh'>Previous</a>
                 <a class="fr" href='/photographs/Japan_No1'>Next</a>
             </div>
 

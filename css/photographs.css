@@ -1,0 +1,158 @@
+/* TREVOR DAVID BLACK
+ * trevord.black
+ * Created: 2020-07-07
+ * Last Modified: 2020-07-07
+*/
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0px auto;
+  width: 1080px;
+  height: calc(100vh - 40px);
+  background-color: rgba(0, 0, 0, 0.9);
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-family: arial;
+}
+
+#wrap {
+  margin: 20px auto;
+  max-width: 1080px;
+  max-height: 100%;
+}
+
+#text {
+  max-height: 100%;
+}
+
+.nav {
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 45px;
+  color: rgba(0, 0, 0, 0.8);
+  font-size: 14px;
+  font-family: arial;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+.nav a {
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+  border-bottom: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+.nav a:hover {
+  text-decoration: underline;
+}
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+.nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+#article {
+  margin: 40px auto;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 14px;
+  font-family: arial;
+  margin: 30px auto;
+}
+
+#article p {
+  line-height: 1.2em;
+  margin: 0;
+  margin-left: 0px;
+}
+
+#article #window {
+  width: 1080px;
+  max-height: 100%;
+  height: calc(100vh - 260px);
+  
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+
+}
+
+#article #window img {
+
+  /*
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  display: table-cell;
+  height: auto;
+  text-align: center;
+  width: auto;
+  vertical-align: middle;
+  */
+  width: auto;
+  max-width: 100%;
+  max-height: 100%;
+  /*
+  width: auto;
+  height: auto;
+  */
+}
+
+#article #footer {
+
+}
+
+#article #pagenav {
+    margin-top: 20px;
+}
+
+#article #pagenav a {
+  text-decoration: none;
+  font-size: 16px;    
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
+}
+
+#article #pagenav a:hover {
+    text-decoration: underline;
+}
+
+#article #pagenav .fl {
+    float: left;
+}
+
+#article #pagenav .fr {
+    float: right;
+}
+
+h1 {
+  font-size: 20px;
+  font-family: -apple-system, helvetica, arial, sans-serif;
+  margin-bottom: 20px;
+}
+img {
+  width: 100%;
+}
+
+@media screen and (max-width: 1080px) {
+  body {
+    width: 100%;
+  }
+  #text{
+    margin: 0 7px;
+  }
+}
