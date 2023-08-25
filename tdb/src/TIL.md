@@ -1,5 +1,18 @@
 # TIL
 
+## 2023-08-25
+
+Grass is younger than trees. A lot younger.
+
+It's sometimes said that sharks are older than trees. According to Wikipedia,
+[sharks](https://en.wikipedia.org/wiki/Shark#Fossil_record) are 439 million years old, whereas
+[trees](https://en.wikipedia.org/wiki/Tree#Evolutionary_history) are 385 million years old. You
+may already be familiar with this delightful fact. Well it turns out that they both have
+grasses significantly beat.
+
+Again, according to Wikipedia, [grass](https://en.wikipedia.org/wiki/Poaceae#Evolutionary_history)
+as a clade may only be 100 to 113 million years old
+
 ## 2023-08-24
 
 The KHR version of Vulkan functionality may not be as universal as the non-KHR version.
